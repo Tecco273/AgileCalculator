@@ -1,1 +1,31 @@
-<!-- Calculator -->
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="calculatorStyle.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <button class="number" onclick="inputNumber('7')">7</button>
+                <button class="number" onclick="inputNumber('8')">8</button>
+                <button class="number" onclick="inputNumber('9')">9</button>
+                <button class="operator" onclick="inputOperator('/')">/</button>
+                <button class="number" onclick="inputNumber('4')">4</button>
+                <button class="number" onclick="inputNumber('5')">5</button>
+                <button class="number" onclick="inputNumber('6')">6</button>
+                <button class="operator" onclick="inputOperator('x')">x</button>
+                <button class="number" onclick="inputNumber('1')">1</button>
+                <button class="number" onclick="inputNumber('2')">2</button>
+                <button class="number" onclick="inputNumber('3')">3</button>
+                <button class="operator" onclick="inputOperator('-')">&#8211;</button>
+                <button class="function" onclick="clearDisplay()">C</button>
+                <button class="number" onclick="inputNumber('0')">0</button>
+                <button class="equals" onclick="calculate()">=</button>
+                <button class="operator" onclick="inputOperator('+')">+</button>
+            </div>
+        </div>
+
+        <script src="functions.js"></script>
+    </body>
+</html>
